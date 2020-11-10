@@ -1,0 +1,31 @@
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-md-6 img">
+     <h5>  Salle  </h5>
+        </div>
+        <div class="col-md-6 details">
+
+            <p>
+            Numéro: {{ salle.numero }} <br>
+                Type:  {{ salle.type}} <br>
+                Capacite:  {{ salle.capacite}} <br>
+
+
+            </p>
+            <a
+                    href="{{ path('salle.list') }}"
+                    target="_blank"
+                    class="card-link">Menu Principale</a>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block title %}
+    détail salle
+{% endblock %}
