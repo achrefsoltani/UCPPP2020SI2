@@ -6,7 +6,7 @@ use App\Repository\SalleRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\Validator\Constraints as Assert;
 /**
  * @ORM\Entity(repositoryClass=SalleRepository::class)
  */
@@ -21,16 +21,21 @@ class Salle
 
     /**
      * @ORM\Column(type="integer")
+     *  @Assert\NotBlank(message="vous devez saisir le numéro de la salle ")
      */
     private $numero;
 
     /**
      * @ORM\Column(type="integer")
+     *  @Assert\NotBlank(message="vous devez saisir la capacité de la salle ")
+     * @Assert\Range(min="20", max="35", minMessage="la salle peut contenir plus que  20 ", maxMessage="la salle ne peut contenir plus que  35 ")
+
      */
     private $capacite;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank(message="vous devez spécifier le type de la salle ")
      */
     private $type;
 

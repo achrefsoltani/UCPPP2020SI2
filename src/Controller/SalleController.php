@@ -40,7 +40,7 @@ class SalleController extends AbstractController
         $form = $this->createForm(SalleType::class, $salle);
         $form->remove('Emploi');
         $form->handleRequest($request);
-        if ($form->isSubmitted()){
+        if ($form->isSubmitted() && $form->isvalid()){
             $em= $this->getDoctrine()->getManager();
             $em->persist($salle);
             $em->flush();
