@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Enseignant index{% endblock %}
+
+{% block body %}
+    <h1>Enseignant index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>DateNaissance</th>
+                <th>Age</th>
+                <th>Adresse</th>
+                <th>NumTel</th>
+                <th>LieuNaissance</th>
+                <th>Sexe</th>
+                <th>Cin</th>
+                <th>Login</th>
+                <th>Mdp</th>
+                <th>Email</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for enseignant in enseignants %}
+            <tr>
+                <td>{{ enseignant.id }}</td>
+                <td>{{ enseignant.nom }}</td>
+                <td>{{ enseignant.prenom }}</td>
+                <td>{{ enseignant.dateNaissance ? enseignant.dateNaissance|date('Y-m-d') : '' }}</td>
+                <td>{{ enseignant.age }}</td>
+                <td>{{ enseignant.adresse }}</td>
+                <td>{{ enseignant.numTel }}</td>
+                <td>{{ enseignant.lieuNaissance }}</td>
+                <td>{{ enseignant.sexe }}</td>
+                <td>{{ enseignant.cin }}</td>
+                <td>{{ enseignant.login }}</td>
+                <td>{{ enseignant.mdp }}</td>
+                <td>{{ enseignant.email }}</td>
+                <td>
+                    <a href="{{ path('enseignant_show', {'id': enseignant.id}) }}">detail</a>
+                    <a href="{{ path('enseignant_edit', {'id': enseignant.id}) }}">modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="14">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a type="button" class="btn btn-primary" href="{{ path('enseignant_new') }}">Ajouter un enseignant</a>
+{% endblock %}
