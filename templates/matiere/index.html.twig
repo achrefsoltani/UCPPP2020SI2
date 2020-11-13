@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Matiere index{% endblock %}
+{% block title %}Liste des Matiéres{% endblock %}
 
 {% block body %}
-    <h1>Matiere index</h1>
+    <h1>Liste des matieres</h1>
 
     <table class="table">
         <thead>
@@ -21,8 +21,8 @@
                 <td>{{ matiere.nom }}</td>
                 <td>{{ matiere.coef }}</td>
                 <td>
-                    <a href="{{ path('matiere_show', {'id': matiere.id}) }}">show</a>
-                    <a href="{{ path('matiere_edit', {'id': matiere.id}) }}">edit</a>
+                    <a type="button" class="btn btn-outline-primary" href="{{ path('matiere_show', {'id': matiere.id}) }}">detail</a>
+                    <a type="button" class="btn btn-outline-primary" href="{{ path('matiere_edit', {'id': matiere.id}) }}">modifier</a>
                 </td>
             </tr>
         {% else %}
@@ -33,5 +33,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('matiere_new') }}">Create new</a>
+    <a type="button" class="btn btn-primary" href="{{ path('matiere_new') }}">Creer une nouvelle matiere</a>
 {% endblock %}

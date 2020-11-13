@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/UCPPP2020SI2.iml" filepath="$PROJECT_DIR$/.idea/UCPPP2020SI2.iml" />
+=======
       <module fileurl="file://$PROJECT_DIR$/.idea/projectSymfony.iml" filepath="$PROJECT_DIR$/.idea/projectSymfony.iml" />
+>>>>>>> origin/master
     </modules>
   </component>
 </project>
