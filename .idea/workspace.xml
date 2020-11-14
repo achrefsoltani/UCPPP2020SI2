@@ -6,28 +6,28 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c74131e-e7b7-4af6-a178-681bbcf74dad" name="Default Changelist" comment="entité salle">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/UCPPP2020SI2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UCPPP2020SI2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2020_9_18_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2020_9_18_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2020_9_36_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2020_9_36_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2020_9_36_PM__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2020_9_36_PM__Default_Changelist_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2020_10_06_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2020_10_06_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2020_18_40__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2020_18_40__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_11_2020_2_05_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_11_2020_2_05_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Matiere.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Matiere.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/matiere/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matiere/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/matiere/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matiere/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/matiere/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matiere/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/matiere/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matiere/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/matiere/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matiere/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/matiere/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matiere/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/EleveController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EleveController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/EleveType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/EleveType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/eleve/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eleve/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,10 +218,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="entité salle" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604866684196">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="484" y="141" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605389201623">
+      <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604866684196" />
+    <state x="484" y="141" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.870@0.0.1600.870" timestamp="1605389201623" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1605132820807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

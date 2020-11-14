@@ -32,9 +32,12 @@ class EleveController extends AbstractController
     {
         $eleve = new Eleve();
         $form = $this->createForm(EleveType::class, $eleve);
+        $form->remove("login");
+        $form->remove("mdp");
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $eleve->setAge(date_diff(new \DateTime(), $eleve->getDateNaissance() )->y);
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($eleve);
             $entityManager->flush();
@@ -67,6 +70,7 @@ class EleveController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $eleve->setAge(date_diff(new \DateTime(), $eleve->getDateNaissance() )->y);
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('eleve_index');
