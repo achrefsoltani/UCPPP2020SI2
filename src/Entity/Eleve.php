@@ -21,61 +21,73 @@ class Eleve
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Type("string")
      */
     private $nom;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Type("string")
      */
     private $prenom;
 
     /**
      * @ORM\Column(type="date")
+     * @Assert\Date
      */
     private $dateNaissance;
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\Type("integer")
      */
     private $age;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Type("string")
      */
     private $adresse;
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\Type("integer")
      */
     private $numTel;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Type("string")
      */
     private $lieuNaissance;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Choice({"Homme", "Femme"})
      */
     private $sexe;
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\Type("integer")
      */
     private $cin;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Type("string")
      */
     private $login;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Type("string")
      */
     private $mdp;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Email
      */
     private $email;
 
@@ -101,6 +113,7 @@ class Eleve
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\Type('integer)
      */
     private $niveau;
 
