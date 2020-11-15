@@ -20,13 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c74131e-e7b7-4af6-a178-681bbcf74dad" name="Default Changelist" comment="entité salle">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2020_18_40__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_11_2020_18_40__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_11_2020_2_05_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_11_2020_2_05_PM__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/EleveController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EleveController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/EleveType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/EleveType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/eleve/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eleve/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,6 +146,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jyo1oA8UKq45UnSjMZEeKnDwGe" />
@@ -186,6 +191,7 @@
       <workItem from="1605111966445" duration="1934000" />
       <workItem from="1605115398212" duration="666000" />
       <workItem from="1605116595476" duration="2828000" />
+      <workItem from="1605452971925" duration="7019000" />
     </task>
     <task id="LOCAL-00001" summary="entité salle">
       <created>1605038303168</created>
@@ -231,10 +237,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1605115461497" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1605038345799">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="322" y="115" key="Vcs.Push.Dialog.v2" timestamp="1605389926513">
+      <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605038345799" />
+    <state x="322" y="115" key="Vcs.Push.Dialog.v2/0.0.1600.870@0.0.1600.870" timestamp="1605389926513" />
     <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605116075717">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
