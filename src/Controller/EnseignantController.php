@@ -32,9 +32,13 @@ class EnseignantController extends AbstractController
     {
         $enseignant = new Enseignant();
         $form = $this->createForm(EnseignantType::class, $enseignant);
+        $form->remove('login');
+        $form->remove('mdp');
+        $form->remove('Emploi');
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $enseignant->setAge(date_diff(new \DateTime(), $enseignant->getDateNaissance() )->y);
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($enseignant);
             $entityManager->flush();

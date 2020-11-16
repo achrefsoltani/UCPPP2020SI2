@@ -6,6 +6,12 @@ use App\Repository\EnseignantRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use libphonenumber\PhoneNumberType;
+use Symfony\Component\Validator\Constraints as Assert;
+use Adamski\Symfony\PhoneNumberBundle\Model\PhoneNumber;
+use Adamski\Symfony\PhoneNumberBundle\Validator\Constraints\PhoneNumber as AssertPhoneNumber;
+
+
 
 /**
  * @ORM\Entity(repositoryClass=EnseignantRepository::class)
@@ -21,6 +27,7 @@ class Enseignant
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank(message="vous devez saisir un nom")
      */
     private $nom;
 
@@ -31,11 +38,15 @@ class Enseignant
 
     /**
      * @ORM\Column(type="date")
+     * @Assert\NotBlank(message="vous devez saisir un prenom")
      */
     private $dateNaissance;
 
     /**
      * @ORM\Column(type="integer")
+     *@Assert\Range(min=25,max=70,
+     *     minMessage="vous ne pouvez pas avoir un age inferieur a un ans",
+     *     maxMessage="si vous avez plus de 70 vous etes en retraite ")
      */
     private $age;
 
@@ -45,7 +56,8 @@ class Enseignant
     private $adresse;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="phone_number")
+     * @Assert\NotBlank()
      */
     private $numTel;
 
@@ -61,21 +73,24 @@ class Enseignant
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\NotBlank(message="vous devez entrer un nombre de 8 chiffres")
      */
     private $cin;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255 ,nullable=true)
      */
     private $login;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255,nullable=true)
      */
     private $mdp;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Email( message = "The email '{{ value }}' is not a valid email."
+     * )
      */
     private $email;
 
@@ -164,12 +179,12 @@ class Enseignant
         return $this;
     }
 
-    public function getNumTel(): ?int
+    public function getNumTel(): ?PhoneNumber
     {
         return $this->numTel;
     }
 
-    public function setNumTel(int $numTel): self
+    public function setNumTel(PhoneNumber $numTel): self
     {
         $this->numTel = $numTel;
 
@@ -301,4 +316,9 @@ class Enseignant
 
         return $this;
     }
+    public function __toString():?string
+    {
+        return $this->getAdresse();
+    }
+
 }
